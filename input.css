@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === СЮДА ВСТАВЬТЕ СОДЕРЖИМОЕ ВАШЕГО styles.css === */
+/* ============================================
+   KLAR STUDIO — ГЛАВНЫЙ ФАЙЛ СТИЛЕЙ
+   ============================================ */
+
+/* ===== ПЛАВНЫЙ СКРОЛЛ ===== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+body { 
+  font-family: 'Inter Tight', sans-serif;
+  padding-top: 100px !important; /* ОТСТУП ДЛЯ ФИКСИРОВАННОЙ ШАПКИ */
+}
+
+em { 
+  font-style: italic; 
+}
+
+/* ===== УТИЛИТАРНЫЕ КЛАССЫ ===== */
+
+/* Guaranteed-consistent horizontal padding across header + all sections */
+.section-pad {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-pad {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-pad {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+/* ===== АНИМАЦИЯ ЗАГОЛОВКОВ ПРИ ПРОКРУТКЕ ===== */
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Класс, который JS добавит при прокрутке */
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== ФИКСИРОВАННАЯ ШАПКА С BLUR ЭФФЕКТОМ ===== */
+
+header#site-header {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 50 !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+  transition: all 0.3s ease !important;
+}
+
+header#site-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ===== МОБИЛЬНОЕ МЕНЮ ===== */
+
+nav#mobileMenu {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  z-index: 9999 !important;
+  min-height: 100vh !important;
+  height: 100vh !important;
+}
+
+nav#mobileMenu.open-menu {
+  opacity: 1 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+  z-index: 9999 !important;
+  min-height: 100vh !important;
+  height: 100vh !important;
+}
+
+/* ===== СТРАНИЦА ALL PROJECTS ===== */
+
+/* Кнопки фильтров */
+.filter-btn {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b6b6f;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: 'Inter Tight', sans-serif;
+}
+
+.filter-btn:hover {
+  color: #1c1c1e;
+  border-color: #e5e7eb;
+}
+
+.filter-btn.active {
+  color: #ffffff;
+  background: #1c1c1e;
+  border-color: #1c1c1e;
+}
+
+/* Карточки проектов */
+.project-card {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Скрытая карточка (при фильтрации) */
+.project-card.hidden-project {
+  display: none !important;
+}
+
+/* Плавное появление при загрузке и фильтрации */
+.project-card.fade-in {
+  animation: projectFadeIn 0.5s ease forwards;
+}
+
+@keyframes projectFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== БАННЕР COOKIES ===== */
+
+#cookie-banner {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  left: auto;
+  transform: translateY(100%);
+  width: 50%;
+  max-width: 720px;
+  z-index: 50;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  pointer-events: none;
+}
+
+#cookie-banner.visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#cookie-banner.hidden-banner {
+  display: none;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  #cookie-banner {
+    width: 90%;
+    right: 20px;
+    bottom: 20px;
+    left: auto;
+  }
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+
+#quote-modal.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#quote-modal.visible .modal-content {
+  transform: scale(1);
+}
+
+/* Блокировка прокрутки body при открытой модалке */
+body.modal-open {
+  overflow: hidden;
+}
+/* Убираем синий фон автозаполнения */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+  -webkit-text-fill-color: #1c1c1e !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+/* Скрыть скроллбар для карусели */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Стили для drag-to-scroll карусели */
+#testimonials-carousel {
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#testimonials-carousel.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto !important; /* отключаем плавность при drag */
+}
+
+#testimonials-carousel.dragging img {
+  pointer-events: none; /* чтобы картинки не мешали перетаскиванию */
+}
+/* === УВЕЛИЧЕННЫЙ ТЕКСТ НА МОБИЛЬНЫХ === */
+@media (max-width: 640px) {
+  body {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  
+  p {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+  
+  a {
+    font-size: 17px;
+  }
+  
+  li {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}
