@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klar Studio — Hero</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Подключение шрифтов -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  
+  <!-- Подключение вашего вынесенного CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  
+</head>
+<body class="bg-white text-ink antialiased">
+
+  <!-- СЮДА JS ВСТАВИТ ШАПКУ -->
+  <div id="header-placeholder"></div>
+  
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- ===== HERO ===== -->
+<section class="section-pad mx-auto max-w-[1440px] pt-4 sm:pt-6 lg:pt-10">
+  <p class="mb-3 text-sm text-muted sm:mb-4 sm:text-base lg:text-lg">
+    Apartments Renovation Z&uuml;rich
+  </p>
+  
+  <h1 class="text-justify text-[2.1rem] font-normal uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl lg:text-[5.4375rem] xl:text-[5.4375rem]">
+    We turn <span class="italic">O</span>ld apartments int<span class="italic">O</span> <span class="text-neutral-400">light, functi<span class="italic">O</span>nal h<span class="italic">O</span>mes</span>
+    
+    <!-- Фото 1 -->
+    <a href="#projects" class="inline-block align-middle mx-2 hover:opacity-70 transition-opacity" style="display: inline-block; vertical-align: middle;">
+      <img src="img/Project-2/project-2.webp" alt="Project 1" style="height: 0.8em; width: auto; object-fit: cover; border-radius: 2px;">
+    </a>
+    
+    Fixed price and timeline, n<span class="italic">O</span> surprises
+    
+    <!-- Фото 2 -->
+    <a href="#projects" class="inline-block align-middle mx-2 hover:opacity-70 transition-opacity" style="display: inline-block; vertical-align: middle;">
+      <img src="img/Project-3/project-3.webp" alt="Project 2" style="height: 0.8em; width: auto; object-fit: cover; border-radius: 2px;">
+    </a>
+  </h1>
+  
+  <div class="w-full h-full overflow-hidden mt-10 lg:mt-16">
+    <img src="img/Common/hero.webp" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" alt="Klar Studio Premium Interior">
+  </div>
+</section>
+
+    <!-- ===== SELECTED PROJECTS ===== -->
+<section id="projects" class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48">
+  <div class="mb-10 flex items-end justify-between sm:mb-14 lg:mb-20">
+    <h2 class="fade-in-up text-4xl uppercase tracking-tight sm:text-5xl lg:text-[3.5rem]">Selected projects</h2>
+    <span class="shrink-0 text-sm text-muted sm:text-base">2023&ndash;2025</span>
+  </div>
+
+  <div class="grid grid-cols-1 gap-y-10 md:grid-cols-12 md:gap-x-6 lg:gap-y-20">
+    
+    <!-- Card 1 -->
+    <article class="md:col-span-3">
+      <a href="project1.html" target="_blank" rel="noopener noreferrer" class="block group">
+        <div class="w-full h-[240px] sm:h-[280px] lg:h-[300px] overflow-hidden border border-gray-200">
+          <img src="img/Project-1/project-1.webp" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Project 1">
+        </div>
+        <h3 class="mt-5 text-lg font-bold sm:text-xl">85 m² Altbau</h3>
+        <p class="mt-1 text-sm text-muted sm:text-base">Open kitchen &amp; oak floors &ndash; Wiedikon 2024</p>
+      </a>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="md:col-span-6 md:col-start-7">
+      <a href="project2.html" target="_blank" rel="noopener noreferrer" class="block group">
+        <div class="w-full h-[320px] sm:h-[370px] lg:h-[400px] overflow-hidden border border-gray-200">
+          <img src="img/Project-2/project-2.webp" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Project 2">
+        </div>
+        <h3 class="mt-5 text-lg font-bold sm:text-xl">1920s apartment</h3>
+        <p class="mt-1 text-sm text-muted sm:text-base">Minimalist bathroom &ndash; Enge 2023</p>
+      </a>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="md:col-span-4">
+      <a href="project3.html" target="_blank" rel="noopener noreferrer" class="block group">
+        <div class="w-full aspect-square overflow-hidden border border-gray-200">
+          <img src="img/Project-3/project-3.webp" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Project 3">
+        </div>
+        <h3 class="mt-5 text-lg font-bold sm:text-xl">3.5-room attic</h3>
+        <p class="mt-1 text-sm text-muted sm:text-base">Scandinavian style &ndash; Kreis 4 2025</p>
+      </a>
+    </article>
+
+    <!-- Текстовый блок + Кнопка -->
+<div class="md:col-span-6 md:col-start-7 flex flex-col justify-between">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <p class="text-sm leading-relaxed text-muted sm:text-base">
+      We are convinced that a successful renovation should be straightforward for the customer: a single point of contact, one set price, and one firm schedule.
+    </p>
+    <p class="text-sm leading-relaxed text-muted sm:text-base">
+      From the initial consultation through to the final cleanup, every step follows a transparent and structured plan. More than 180 apartments completed on the promised timeframe.
+    </p>
+  </div>
+  <a href="projects.html" target="_blank" rel="noopener noreferrer" class="group mt-8 inline-flex items-center gap-2 text-lg font-bold hover:opacity-80 transition-opacity sm:text-xl self-end">
+    see more projects
+    <svg class="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"></line>
+      <polyline points="7 7 17 7 17 17"></polyline>
+    </svg>
+  </a>
+</div>
+
+  </div>
+</section>
+        
+
+    <!-- ===== HOW WE WORK ===== -->
+    <section id="how-we-work" class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48">
+      <h2 class="fade-in-up mb-10 text-center text-4xl uppercase tracking-tight sm:text-5xl lg:mb-20 lg:text-[3.5rem]">How we work</h2>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:gap-6">
+        <article class="flex flex-col justify-between border border-gray-200 p-6 sm:col-span-2 sm:p-8 lg:col-span-2 lg:min-h-[320px]">
+          <div class="flex items-start justify-between">
+            <span class="text-lg text-muted sm:text-md">First visit &amp; offer</span>
+            <div class="flex flex-col gap-1" aria-hidden="true"><span class="h-3.5 w-3.5 bg-ink"></span></div>
+          </div>
+          <p class="mt-10 text-xl leading-snug sm:text-xl lg:mt-0">We measure, listen to your wishes and send a detailed fixed-price offer within 5 days.</p>
+        </article>
+        <article class="flex flex-col justify-between border border-gray-200 p-6 sm:p-8 lg:min-h-[320px]">
+          <div class="flex items-start justify-between">
+            <span class="text-lg text-muted sm:text-md">Planning &amp; materials</span>
+            <div class="flex flex-col gap-1" aria-hidden="true"><span class="h-3.5 w-3.5 bg-ink"></span><span class="h-3.5 w-3.5 bg-ink"></span></div>
+          </div>
+          <p class="mt-10 text-xl leading-snug sm:text-xl lg:mt-0">Together we choose materials. You receive 3D visuals and final timeline.</p>
+        </article>
+        <article class="flex flex-col justify-between border border-gray-200 p-6 sm:p-8 lg:min-h-[320px]">
+          <div class="flex items-start justify-between">
+            <span class="text-lg text-muted sm:text-md">Renovation phase</span>
+            <div class="flex flex-col gap-1" aria-hidden="true"><span class="h-3.5 w-3.5 bg-ink"></span><span class="h-3.5 w-3.5 bg-ink"></span><span class="h-3.5 w-3.5 bg-ink"></span></div>
+          </div>
+          <p class="mt-10 text-xl leading-snug sm:text-xl lg:mt-0">Our own teams work Mon&ndash;Fri 08:00&ndash;17:00. Weekly photo updates.</p>
+        </article>
+        <article class="order-5 grid grid-cols-2 lg:gap-6 gap-3 sm:col-span-2 lg:order-4 lg:col-span-2 lg:min-h-[320px]">
+          <div class="min-w-0 flex-1 overflow-hidden border border-gray-200">
+            <img src="img/Common/team.webp" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" alt="Наша команда">
+          </div>
+          <a href="#" data-modal-open class="group flex min-w-0 flex-1 items-center justify-center bg-black p-4 text-center text-white sm:p-6">
+  <span class="inline-flex items-center gap-2 text-base font-bold text-white sm:text-xl">
+    start your project
+    <svg class="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="7" y1="17" x2="17" y2="7"></line>
+      <polyline points="7 7 17 7 17 17"></polyline>
+    </svg>
+  </span>
+</a>
+        </article>
+        <article class="order-4 flex flex-col justify-between border border-gray-200 p-6 sm:col-span-2 sm:p-8 lg:order-5 lg:col-span-2 lg:min-h-[320px]">
+          <div class="flex items-start justify-between">
+            <span class="text-lg text-muted sm:text-md">Handover &amp; guarantee</span>
+            <div class="flex flex-col gap-1" aria-hidden="true"><span class="h-3.5 w-3.5 bg-ink"></span><span class="h-3.5 w-3.5 bg-ink"></span><span class="h-3.5 w-3.5 bg-ink"></span><span class="h-3.5 w-3.5 bg-ink"></span></div>
+          </div>
+          <p class="mt-10 text-xl leading-snug sm:text-xl lg:mt-0">Final walkthrough, cleaning included. 5-year warranty on all work.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== WE KEEP PROMISES ===== -->
+    <section id="promises" class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-x-8">
+        <h2 class="fade-in-up text-4xl uppercase leading-[0.95] tracking-tight sm:text-5xl lg:col-span-6 lg:text-[3.5rem]">We keep promises</h2>
+        <p class="text-sm leading-relaxed text-muted sm:text-base lg:col-span-3">KLAR STUDIO was founded in Z&uuml;rich in 2015 by two architects who were tired of chaotic renovations and surprise costs. We only renovate apartments &ndash; nothing else. This focus lets us know every detail of Z&uuml;rich&rsquo;s old buildings and current building regulations inside out. All craftsmen are employed directly by us. No subcontractors, no excuses.</p>
+        <p class="text-sm leading-relaxed text-muted sm:text-base lg:col-span-3">We believe a good renovation must be simple for the client: one contact person, one fixed price, one binding timeline. From the first visit to the final cleaning, everything runs on a clear plan. Over 180 apartments renovated, 98&nbsp;% handed over on the agreed date, zero disputes about extra costs.</p>
+      </div>
+      <div class="mt-12 grid grid-cols-1 gap-y-10 border-t border-gray-300 sm:grid-cols-2 sm:gap-x-8 lg:mt-16 lg:grid-cols-4 lg:gap-y-0 lg:gap-x-0">
+        <div class="pt-10 lg:pr-8">
+          <div class="text-5xl leading-none tracking-tight text-black sm:text-6xl lg:text-[4rem]"><span class="counter" data-target="480">0</span>+</div>
+          <p class="mt-6 max-w-[15rem] text-sm leading-relaxed text-muted sm:text-base">Projects completed. Fixed price guarantee &ndash; No hidden costs, ever.</p>
+        </div>
+        <div class="relative pt-10 lg:border-l lg:border-gray-300 lg:px-8">
+          <span class="absolute -top-3 left-0 h-6 w-6 rounded-full bg-white lg:-left-3" aria-hidden="true"></span>
+          <div class="text-5xl leading-none tracking-tight text-black sm:text-6xl lg:text-[4rem]"><span class="counter" data-target="98">0</span>%</div>
+          <p class="mt-6 max-w-[15rem] text-sm leading-relaxed text-muted sm:text-base">Of projects handed over on the agreed date.</p>
+        </div>
+        <div class="relative pt-10 lg:border-l lg:border-gray-300 lg:px-8">
+          <span class="absolute -top-3 left-0 h-6 w-6 rounded-full bg-white lg:-left-3" aria-hidden="true"></span>
+          <div class="text-5xl leading-none tracking-tight text-black sm:text-6xl lg:text-[4rem]"><span class="counter" data-target="100">0</span></div>
+          <p class="mt-6 max-w-[15rem] text-sm leading-relaxed text-muted sm:text-base">Own carpenters &amp; craftsmen &ndash; No subcontractors chaos.</p>
+        </div>
+        <div class="relative pt-10 lg:border-l lg:border-gray-300 lg:pl-8">
+          <span class="absolute -top-3 left-0 h-6 w-6 rounded-full bg-white lg:-left-3" aria-hidden="true"></span>
+          <div class="text-5xl leading-none tracking-tight sm:text-6xl lg:text-[4rem]"><span class="counter" data-target="5">0</span>-YEAR</div>
+          <p class="mt-6 max-w-[15rem] text-sm leading-relaxed text-muted sm:text-base">Full warranty &ndash; we fix anything, free of charge.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== INTERACTIVE CALCULATOR SECTION ===== -->
+    <section id="calculator" class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48">
+      <div class="mb-10 flex items-end justify-between sm:mb-14 lg:mb-20">
+        <h2 class="fade-in-up text-4xl uppercase leading-[0.95] tracking-tight text-left sm:text-5xl lg:text-[3.5rem]">Renovation cost<br>calculator</h2>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        <div class="lg:col-span-7 flex flex-col gap-8">
+          <div>
+            <span class="block text-xs uppercase tracking-wider text-gray-400 mb-3 font-mono">01. Property Type</span>
+            <div class="grid grid-cols-2 gap-4">
+              <button type="button" onclick="setBuildingType('new')" id="btn-type-new" class="calc-btn p-5 border border-[#1C1D21] bg-[#1C1D21] text-white text-left font-bold sm:text-xl transition-colors">New Building</button>
+              <button type="button" onclick="setBuildingType('old')" id="btn-type-old" class="calc-btn p-5 border border-gray-200 bg-white text-black text-left font-bold sm:text-xl transition-colors hover:border-black">Resale Property</button>
+            </div>
+          </div>
+          <div>
+            <span class="block text-xs uppercase tracking-wider text-gray-400 mb-3 font-mono">02. Renovation Style</span>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <button type="button" onclick="setPackage('cosmetic')" id="btn-pkg-cosmetic" class="calc-btn p-5 border border-gray-200 bg-white text-black text-left font-bold sm:text-xl transition-colors hover:border-black"><span class="block">Cosmetic</span><span class="block text-xs text-gray-400 mt-1 font-normal">Light refresh</span></button>
+              <button type="button" onclick="setPackage('capital')" id="btn-pkg-capital" class="calc-btn p-5 border border-[#1C1D21] bg-[#1C1D21] text-white text-left font-bold sm:text-xl transition-colors"><span class="block">Capital</span><span class="block text-xs text-gray-300 mt-1 font-normal">Full overhaul</span></button>
+              <button type="button" onclick="setPackage('design')" id="btn-pkg-design" class="calc-btn p-5 border border-gray-200 bg-white text-black text-left font-bold sm:text-xl transition-colors hover:border-black"><span class="block">Designer</span><span class="block text-xs text-gray-400 mt-1 font-normal">Custom project</span></button>
+            </div>
+          </div>
+          <div>
+            <span class="block text-xs uppercase tracking-wider text-gray-400 mb-3 font-mono">03. Additional Services</span>
+            <div class="flex flex-col gap-3">
+              <label class="flex items-center gap-4 p-4 border border-gray-200 cursor-pointer select-none hover:border-black transition-colors">
+                <input type="checkbox" id="opt-design" onchange="calculateTotal()" class="w-4 h-4 accent-[#1C1D21]">
+                <span class="text-base font-bold sm:text-lg">Add Interior Design Project (+1,200 EUR/m²)</span>
+              </label>
+              <label class="flex items-center gap-4 p-4 border border-gray-200 cursor-pointer select-none hover:border-black transition-colors">
+                <input type="checkbox" id="opt-demolition" onchange="calculateTotal()" class="w-4 h-4 accent-[#1C1D21]">
+                <span class="text-base font-bold sm:text-lg">Complete Wall Demolition & Planning (+12%)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-5 flex flex-col justify-between border border-gray-200 p-6 sm:p-8 bg-white min-h-[420px]">
+          <div class="w-full">
+            <div class="flex justify-between items-end mb-4">
+              <span class="text-xs uppercase tracking-wider text-gray-400 font-mono">04. Total Area</span>
+              <span id="area-val" class="text-2xl font-bold">65 m²</span>
+            </div>
+            <input type="range" id="area-slider" min="20" max="250" value="65" oninput="updateArea(this.value)" class="w-full accent-[#1C1D21] h-1 bg-gray-200 appearance-none cursor-pointer">
+          </div>
+          <div class="my-6 pt-6 border-t border-gray-100 flex-grow flex flex-col justify-center">
+            <span class="block text-xs uppercase tracking-wider text-gray-400 mb-1 font-mono">Estimated Cost</span>
+            <div id="total-price" class="text-4xl sm:text-5xl font-medium tracking-tight text-black">552,500 €</div>
+            <span class="block text-xs text-gray-400 mt-2">*The calculation is approximate. Within 5 days we will prepare a fixed price quote.</span>
+          </div>
+        <button 
+  type="button" 
+  data-modal-open 
+  class="w-full bg-[#1C1D21] text-white px-6 py-4 text-lg font-bold flex items-center justify-between hover:opacity-80 transition-opacity sm:text-xl"
+>
+  send request
+  <svg class="h-5 w-5 shrink-0 transition-transform hover:translate-x-0.5 hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="7" y1="17" x2="17" y2="7"></line>
+    <polyline points="7 7 17 7 17 17"></polyline>
+  </svg>
+</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS CAROUSEL ===== -->
+<section id="testimonials" class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48">
+  
+  <!-- Заголовок секции -->
+  <div class="mb-16 flex flex-col justify-between gap-4 sm:flex-row sm:items-end lg:mb-24 fade-in-up">
+    <div>
+      <h2 class="fade-in-up text-4xl uppercase leading-[0.95] tracking-tight sm:text-5xl lg:col-span-6 lg:text-[3.5rem]">What our clients say</h2>
+    </div>
+    <p class="mb-3 text-sm text-muted sm:mb-4 sm:text-base lg:text-lg">Testimonials</p>
+  </div>
+
+  <!-- Карусель -->
+  <div class="relative">
+    <!-- Контейнер с прокруткой -->
+    <div id="testimonials-carousel" class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-4 scrollbar-hide" style="scrollbar-width: none; -ms-overflow-style: none;">
+      
+      <!-- Отзыв 1 -->
+      <div class="fade-in-up group min-w-[300px] snap-start sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
+        <div class="mb-6 overflow-hidden border border-gray-200">
+          <img src="img/Testimonials/testimonial1.webp" alt="Renovated apartment" class="h-64 w-full object-cover">
+        </div>
+        <div class="flex items-center gap-1 mb-4">
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="mb-6 text-base text-muted leading-relaxed">
+          "Klar Studio transformed our old apartment into a bright, modern home. The fixed price and timeline gave us complete peace of mind. Highly recommend!"
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 overflow-hidden rounded-full bg-gray-200">
+            <img src="img/Testimonials/testimonial1.webp" alt="Client" class="h-full w-full object-cover">
+          </div>
+          <div>
+            <p class="text-sm font-bold text-ink">Sarah & Thomas Müller</p>
+            <p class="text-xs text-muted">Seefeld, Zürich</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Отзыв 2 -->
+      <div class="fade-in-up group min-w-[300px] snap-start sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]" style="transition-delay: 100ms;">
+        <div class="mb-6 overflow-hidden border border-gray-200">
+          <img src="img/Testimonials/testimonial2.webp" alt="Renovated apartment" class="h-64 w-full object-cover">
+        </div>
+        <div class="flex items-center gap-1 mb-4">
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="mb-6 text-base text-muted leading-relaxed">
+          "Professional team, excellent communication throughout the project. They delivered exactly what was promised, on time and within budget."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 overflow-hidden rounded-full bg-gray-200">
+            <img src="img/Testimonials/testimonial2.webp" alt="Client" class="h-full w-full object-cover">
+          </div>
+          <div>
+            <p class="text-sm font-bold text-ink">Anna Schneider</p>
+            <p class="text-xs text-muted">Wiedikon, Zürich</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Отзыв 3 -->
+      <div class="fade-in-up group min-w-[300px] snap-start sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]" style="transition-delay: 200ms;">
+        <div class="mb-6 overflow-hidden border border-gray-200">
+          <img src="img/Testimonials/testimonial3.webp" alt="Renovated apartment" class="h-64 w-full object-cover">
+        </div>
+        <div class="flex items-center gap-1 mb-4">
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="mb-6 text-base text-muted leading-relaxed">
+          "From design to final handover, everything was seamless. Our apartment looks stunning and the quality is outstanding. Worth every franc!"
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 overflow-hidden rounded-full bg-gray-200">
+            <img src="img/Testimonials/testimonial3.webp" alt="Client" class="h-full w-full object-cover">
+          </div>
+          <div>
+            <p class="text-sm font-bold text-ink">Michael & Elena Weber</p>
+            <p class="text-xs text-muted">Enge, Zürich</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Отзыв 4 (копия отзыва 1) -->
+      <div class="fade-in-up group min-w-[300px] snap-start sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
+        <div class="mb-6 overflow-hidden border border-gray-200">
+          <img src="img/Testimonials/testimonial1.webp" alt="Renovated apartment" class="h-64 w-full object-cover">
+        </div>
+        <div class="flex items-center gap-1 mb-4">
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="mb-6 text-base text-muted leading-relaxed">
+          "Amazing attention to detail. The team was respectful of our home and completed the work faster than expected. Couldn't be happier!"
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 overflow-hidden rounded-full bg-gray-200">
+            <img src="img/Testimonials/testimonial1.webp" alt="Client" class="h-full w-full object-cover">
+          </div>
+          <div>
+            <p class="text-sm font-bold text-ink">David & Laura Fischer</p>
+            <p class="text-xs text-muted">Altstetten, Zürich</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Отзыв 5 (копия отзыва 2) -->
+      <div class="fade-in-up group min-w-[300px] snap-start sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
+        <div class="mb-6 overflow-hidden border border-gray-200">
+          <img src="img/Testimonials/testimonial2.webp" alt="Renovated apartment" class="h-64 w-full object-cover">
+        </div>
+        <div class="flex items-center gap-1 mb-4">
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="mb-6 text-base text-muted leading-relaxed">
+          "The 3D visuals helped us make decisions quickly. No surprises during construction. True professionals who care about quality."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 overflow-hidden rounded-full bg-gray-200">
+            <img src="img/Testimonials/testimonial2.webp" alt="Client" class="h-full w-full object-cover">
+          </div>
+          <div>
+            <p class="text-sm font-bold text-ink">Sophie Brunner</p>
+            <p class="text-xs text-muted">Hottingen, Zürich</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Отзыв 6 (копия отзыва 3) -->
+      <div class="fade-in-up group min-w-[300px] snap-start sm:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)]">
+        <div class="mb-6 overflow-hidden border border-gray-200">
+          <img src="img/Testimonials/testimonial3.webp" alt="Renovated apartment" class="h-64 w-full object-cover">
+        </div>
+        <div class="flex items-center gap-1 mb-4">
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg class="h-4 w-4 text-ink" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="mb-6 text-base text-muted leading-relaxed">
+          "Best investment we made. The apartment value increased significantly after renovation. Klar Studio exceeded all expectations!"
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 overflow-hidden rounded-full bg-gray-200">
+            <img src="img/Testimonials/testimonial3.webp" alt="Client" class="h-full w-full object-cover">
+          </div>
+          <div>
+            <p class="text-sm font-bold text-ink">Marco & Julia Rossi</p>
+            <p class="text-xs text-muted">Fluntern, Zürich</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Кнопки навигации -->
+    <button id="carousel-prev" class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors">
+      <svg class="h-6 w-6 text-ink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button id="carousel-next" class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-lg hover:bg-gray-50 transition-colors">
+      <svg class="h-6 w-6 text-ink" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  </div>
+
+</section>
+
+<!-- ===== FAQ ===== -->
+<section id="faq" class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48">
+  <div class="mb-10 flex items-end justify-between sm:mb-14 lg:mb-20">
+    <h2 class="fade-in-up text-4xl uppercase tracking-tight sm:text-5xl lg:text-[3.5rem]">FAQ</h2>
+    <span class="shrink-0 text-sm text-muted sm:text-base">Common questions</span>
+  </div>
+
+  <div class="divide-y divide-gray-200 border-t border-b border-gray-200">
+    
+    <!-- Вопрос 1 -->
+    <div class="faq-item">
+      <button class="faq-toggle flex w-full items-center justify-between py-6 text-left transition-colors hover:text-neutral-600">
+        <span class="pr-8 text-lg font-medium sm:text-xl">How long does a typical renovation take?</span>
+        <span class="faq-icon relative h-6 w-6 shrink-0">
+          <span class="absolute top-1/2 left-0 h-[2px] w-6 bg-current transition-transform duration-300"></span>
+          <span class="absolute top-0 left-1/2 h-6 w-[2px] bg-current transition-transform duration-300"></span>
+        </span>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-out">
+        <p class="pb-6 text-base leading-relaxed text-muted sm:text-lg">
+          Most projects take between 6 and 12 weeks, depending on the scope and condition of the apartment. During our initial consultation, we provide a detailed timeline with weekly milestones so you always know what's happening on site.
+        </p>
+      </div>
+    </div>
+
+    <!-- Вопрос 2 -->
+    <div class="faq-item">
+      <button class="faq-toggle flex w-full items-center justify-between py-6 text-left transition-colors hover:text-neutral-600">
+        <span class="pr-8 text-lg font-medium sm:text-xl">What's included in the fixed price?</span>
+        <span class="faq-icon relative h-6 w-6 shrink-0">
+          <span class="absolute top-1/2 left-0 h-[2px] w-6 bg-current transition-transform duration-300"></span>
+          <span class="absolute top-0 left-1/2 h-6 w-[2px] bg-current transition-transform duration-300"></span>
+        </span>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-out">
+        <p class="pb-6 text-base leading-relaxed text-muted sm:text-lg">
+          Our fixed-price offer includes all labour, materials, project management, waste removal, and final cleaning. The only things not included are furniture and decorative items — unless you specifically ask us to source them.
+        </p>
+      </div>
+    </div>
+
+    <!-- Вопрос 3 -->
+    <div class="faq-item">
+      <button class="faq-toggle flex w-full items-center justify-between py-6 text-left transition-colors hover:text-neutral-600">
+        <span class="pr-8 text-lg font-medium sm:text-xl">Do you work with old apartments (Altbau)?</span>
+        <span class="faq-icon relative h-6 w-6 shrink-0">
+          <span class="absolute top-1/2 left-0 h-[2px] w-6 bg-current transition-transform duration-300"></span>
+          <span class="absolute top-0 left-1/2 h-6 w-[2px] bg-current transition-transform duration-300"></span>
+        </span>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-out">
+        <p class="pb-6 text-base leading-relaxed text-muted sm:text-lg">
+          Absolutely. Altbau renovations are our specialty. We're experienced with period features, structural challenges, and the specific requirements of Zürich's heritage buildings. We handle all permits and coordinate with the landlord or building management.
+        </p>
+      </div>
+    </div>
+
+    <!-- Вопрос 4 -->
+    <div class="faq-item">
+      <button class="faq-toggle flex w-full items-center justify-between py-6 text-left transition-colors hover:text-neutral-600">
+        <span class="pr-8 text-lg font-medium sm:text-xl">Do I need a design project before starting?</span>
+        <span class="faq-icon relative h-6 w-6 shrink-0">
+          <span class="absolute top-1/2 left-0 h-[2px] w-6 bg-current transition-transform duration-300"></span>
+          <span class="absolute top-0 left-1/2 h-6 w-[2px] bg-current transition-transform duration-300"></span>
+        </span>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-out">
+        <p class="pb-6 text-base leading-relaxed text-muted sm:text-lg">
+          Not necessarily. We offer a full design service with 3D visualisations if you want it, but we can also work from your own plans, mood boards, or even just a conversation about your style. Our design package adds CHF 1,200 per m² to the base renovation price.
+        </p>
+      </div>
+    </div>
+
+    <!-- Вопрос 5 -->
+    <div class="faq-item">
+      <button class="faq-toggle flex w-full items-center justify-between py-6 text-left transition-colors hover:text-neutral-600">
+        <span class="pr-8 text-lg font-medium sm:text-xl">What kind of warranty do you offer?</span>
+        <span class="faq-icon relative h-6 w-6 shrink-0">
+          <span class="absolute top-1/2 left-0 h-[2px] w-6 bg-current transition-transform duration-300"></span>
+          <span class="absolute top-0 left-1/2 h-6 w-[2px] bg-current transition-transform duration-300"></span>
+        </span>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-out">
+        <p class="pb-6 text-base leading-relaxed text-muted sm:text-lg">
+          We provide a 5-year warranty on all workmanship and a 2-year warranty on installed materials. If anything goes wrong, we fix it at no extra cost. This is documented in writing before we start any work.
+        </p>
+      </div>
+    </div>
+
+    <!-- Вопрос 6 -->
+    <div class="faq-item">
+      <button class="faq-toggle flex w-full items-center justify-between py-6 text-left transition-colors hover:text-neutral-600">
+        <span class="pr-8 text-lg font-medium sm:text-xl">How does payment work?</span>
+        <span class="faq-icon relative h-6 w-6 shrink-0">
+          <span class="absolute top-1/2 left-0 h-[2px] w-6 bg-current transition-transform duration-300"></span>
+          <span class="absolute top-0 left-1/2 h-6 w-[2px] bg-current transition-transform duration-300"></span>
+        </span>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-out">
+        <p class="pb-6 text-base leading-relaxed text-muted sm:text-lg">
+          Payment is split into three stages: 30% at signing, 40% at the midpoint of the project, and 30% after final handover. We never ask for full payment upfront, and you only pay the final instalment once you're completely satisfied with the result.
+        </p>
+      </div>
+    </div>
+
+    <!-- Вопрос 7 -->
+    <div class="faq-item">
+      <button class="faq-toggle flex w-full items-center justify-between py-6 text-left transition-colors hover:text-neutral-600">
+        <span class="pr-8 text-lg font-medium sm:text-xl">Do you work on weekends?</span>
+        <span class="faq-icon relative h-6 w-6 shrink-0">
+          <span class="absolute top-1/2 left-0 h-[2px] w-6 bg-current transition-transform duration-300"></span>
+          <span class="absolute top-0 left-1/2 h-6 w-[2px] bg-current transition-transform duration-300"></span>
+        </span>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-out">
+        <p class="pb-6 text-base leading-relaxed text-muted sm:text-lg">
+          Our standard working hours are Monday to Friday, 08:00–18:00. Weekend work is possible in special cases (for example, to meet a tight move-in deadline) and is agreed in advance. We always respect building quiet hours and neighbour relations.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ===== READY FOR A NEW HOME? ===== -->
+<section id="quote" class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48">
+  <h2 class="text-4xl uppercase leading-[0.95] tracking-tight text-left mb-10 sm:text-5xl lg:text-[3.5rem] lg:mb-16">Ready for<br>a new home?</h2>
+  <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-6">
+    <div class="bg-neutral-900 p-8 text-white sm:p-10 lg:p-12">
+      <div id="form-header">
+  <h3 class="text-2xl tracking-tight sm:text-3xl">Tell us about your apartment</h3>
+  <p class="mt-3 text-sm text-neutral-400 sm:text-base">We answer within 24 hours</p>
+</div>
+      <form id="contact-form" class="mt-8 space-y-4">
+
+        <!-- ОБЁРТКА ДЛЯ ПОЛЕЙ -->
+        <div id="form-fields" class="space-y-4">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label for="lastName" class="sr-only">Last Name</label>
+              <input id="lastName" name="lastName" type="text" placeholder="Last Name" required class="w-full border border-neutral-700 bg-neutral-800 px-4 py-3 text-sm text-white placeholder-neutral-500 outline-none transition-colors focus:border-neutral-400">
+            </div>
+            <div>
+              <label for="firstName" class="sr-only">First Name</label>
+              <input id="firstName" name="firstName" type="text" placeholder="First Name" required class="w-full border border-neutral-700 bg-neutral-800 px-4 py-3 text-sm text-white placeholder-neutral-500 outline-none transition-colors focus:border-neutral-400">
+            </div>
+          </div>
+          <div>
+            <label for="email" class="sr-only">Email</label>
+            <input id="email" name="email" type="email" placeholder="Email" required class="w-full border border-neutral-700 bg-neutral-800 px-4 py-3 text-sm text-white placeholder-neutral-500 outline-none transition-colors focus:border-neutral-400">
+          </div>
+          <div>
+            <label for="phone" class="sr-only">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="Phone Number" required class="w-full border border-neutral-700 bg-neutral-800 px-4 py-3 text-sm text-white placeholder-neutral-500 outline-none transition-colors focus:border-neutral-400">
+          </div>
+          <div>
+            <label for="message" class="sr-only">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Message" required class="w-full resize-none border border-neutral-700 bg-neutral-800 px-4 py-3 text-sm text-white placeholder-neutral-500 outline-none transition-colors focus:border-neutral-400"></textarea>
+          </div>
+          <div class="mb-2">
+            <label class="flex items-start gap-3 cursor-pointer select-none text-left">
+              <input type="checkbox" required class="mt-1 w-4 h-4 accent-[#1C1D21] shrink-0 rounded-none border-gray-300">
+              <span class="text-sm text-neutral-400 leading-tight">I agree with the <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="underline text-white hover:text-neutral-300 transition-colors">Privacy Policy</a></span>
+            </label>
+          </div>
+        </div>
+        <!-- /ОБЁРТКА -->
+
+        <button type="submit" class="group mt-4 inline-flex items-center gap-2 text-lg font-bold sm:text-xl text-white">
+          send message
+          <svg class="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </button>
+
+        <!-- СЮДА JS ДОБАВИТ СООБЩЕНИЕ THANK YOU -->
+         <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+      </form>
+    </div>
+    <div class="flex flex-col justify-between">
+      <img src="img/Common/interior.webp" loading="lazy" decoding="async" class="w-full max-w-[340px] h-[220px] lg:h-[260px] object-cover ml-auto" alt="Interior">
+      <a href="#" data-modal-open class="group mt-8 inline-flex items-center justify-end gap-2 text-left lg:self-end text-lg font-bold sm:text-xl text-black">
+        start your project
+        <svg class="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- ===== DYNAMIC GALLERY SECTION ===== -->
+<section class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-24">
+  <div id="project-gallery" class="relative w-full overflow-hidden border border-gray-200 group">
+    
+    <!-- Контейнер для фото -->
+    <div class="relative w-full h-[350px] sm:h-[500px] lg:h-[650px]">
+      <div id="gallery-images" class="absolute inset-0"></div>
+    </div>
+
+    <!-- Кнопки навигации -->
+    <button id="gallery-prev" class="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+      <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button id="gallery-next" class="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+      <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+
+  </div>
+</section>
+
+    <!-- СЮДА JS ВСТАВИТ ПОДВАЛ -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Кнопка "Наверх" -->
+  <button 
+    id="scrollToTop" 
+    aria-label="Scroll to top"
+    class="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-[60] p-3 bg-[#1C1D21] text-white rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-neutral-700 hover:-translate-y-1"
+  >
+    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Подключение вашего вынесенного JS (ОДИН РАЗ!) -->
+  <script src="script.js"></script>
+
+</body>
+</html>

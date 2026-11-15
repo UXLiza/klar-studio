@@ -1,0 +1,46 @@
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  
+  <!-- Прогресс-бар скролла -->
+  <div id="scroll-progress" class="absolute top-0 left-0 h-[3px] bg-[#1C1D21] z-[100]" style="width: 0%;"></div>
+
+  <div class="section-pad mx-auto flex max-w-[1440px] items-center justify-between py-5 sm:py-6">
+    <a href="index.html" class="shrink-0">
+      <img src="img/Common/logo-black.svg" class="h-6 w-auto object-contain" alt="KLAR STUDIO">
+    </a>
+    
+    <!-- ДЕСКТОПНОЕ МЕНЮ -->
+    <nav class="hidden items-center gap-10 lg:flex xl:gap-12">
+      <a href="projects.html" target="_blank" rel="noopener noreferrer" class="text-lg text-ink transition-opacity hover:opacity-60 xl:text-xl">projects</a>
+      <a href=" index.html#promises" class="text-lg text-ink transition-opacity hover:opacity-60 xl:text-xl">about</a>
+      <a href="contacts.html" target="_blank" rel="noopener noreferrer" class="text-lg text-ink transition-opacity hover:opacity-60 xl:text-xl">contacts</a>
+    </nav>
+    
+    <button data-modal-open class="group hidden shrink-0 items-center gap-2 lg:flex bg-transparent border-0 cursor-pointer">
+      <span class="text-lg font-bold xl:text-xl">get your free quote</span>
+      <svg class="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="7" y1="17" x2="17" y2="7"></line>
+        <polyline points="7 7 17 7 17 17"></polyline>
+      </svg>
+    </button>
+    
+    <button id="burgerBtn" aria-label="Open menu" aria-expanded="false" class="flex flex-col justify-center gap-[5px] p-2 lg:hidden">
+      <span class="burger-line block h-[2px] w-6 bg-ink transition-transform duration-200"></span>
+      <span class="burger-line block h-[2px] w-6 bg-ink transition-opacity duration-200"></span>
+      <span class="burger-line block h-[2px] w-6 bg-ink transition-transform duration-200"></span>
+    </button>
+  </div>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <nav id="mobileMenu" class="fixed inset-x-0 top-[64px] bottom-0 z-40 flex -translate-y-3 flex-col gap-8 bg-white px-6 py-10 opacity-0 pointer-events-none transition-all duration-300 sm:top-[76px] lg:hidden">
+    <a href="projects.html" target="_blank" rel="noopener noreferrer" class="border-b border-gray-200 pb-5 text-2xl font-medium">projects</a>
+    <a href="index.html#promises" class="border-b border-gray-200 pb-5 text-2xl font-medium">about</a>
+    <a href="contacts.html" target="_blank" rel="noopener noreferrer" class="border-b border-gray-200 pb-5 text-2xl font-medium">contacts</a>
+    <button data-modal-open class="mt-2 flex items-center gap-2 bg-transparent border-0 cursor-pointer p-0">
+      <span class="text-2xl font-bold">get your free quote</span>
+      <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
+        <path d="M5 19L19 5M19 5H8M19 5V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </nav>
+
+  </header>

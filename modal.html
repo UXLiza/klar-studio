@@ -1,0 +1,80 @@
+<!-- Модальное окно -->
+<div id="quote-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+  <!-- Затемнение фона -->
+  <div class="modal-overlay absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+  
+  <!-- Контент модального окна -->
+  <div class="modal-content relative bg-white w-full max-w-[500px] p-8 sm:p-10 transform scale-95 transition-transform duration-300">
+    
+    <!-- Кнопка закрытия (всегда видна, даже когда форма скрыта) -->
+    <button data-modal-close class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-gray-400 hover:text-ink transition-colors bg-transparent border-0 cursor-pointer">
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <!-- ВЕСЬ КОНТЕНТ ФОРМЫ В ОДНОМ БЛОКЕ -->
+    <div id="form-section">
+      <h3 class="text-2xl font-bold text-ink mb-2">Get your free quote</h3>
+      <p class="text-sm text-muted mb-6">Please leave your contact details and we will contact you within 24 hours.</p>
+
+      <form id="quote-form" class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="modal-firstName" class="sr-only">First Name</label>
+            <input id="modal-firstName" name="firstName" type="text" placeholder="First Name" required
+              class="w-full border border-gray-300 bg-white px-4 py-3 text-sm text-ink placeholder-gray-400 outline-none transition-colors focus:border-ink">
+          </div>
+          <div>
+            <label for="modal-lastName" class="sr-only">Last Name</label>
+            <input id="modal-lastName" name="lastName" type="text" placeholder="Last Name" required
+              class="w-full border border-gray-300 bg-white px-4 py-3 text-sm text-ink placeholder-gray-400 outline-none transition-colors focus:border-ink">
+          </div>
+        </div>
+
+        <div>
+          <label for="modal-email" class="sr-only">Email</label>
+          <input id="modal-email" name="email" type="email" placeholder="Email" required
+            class="w-full border border-gray-300 bg-white px-4 py-3 text-sm text-ink placeholder-gray-400 outline-none transition-colors focus:border-ink">
+        </div>
+
+        <div>
+          <label for="modal-phone" class="sr-only">Phone Number</label>
+          <input id="modal-phone" name="phone" type="tel" placeholder="Phone Number" required
+            class="w-full border border-gray-300 bg-white px-4 py-3 text-sm text-ink placeholder-gray-400 outline-none transition-colors focus:border-ink">
+        </div>
+
+        <div>
+          <label for="modal-message" class="sr-only">Message</label>
+          <textarea id="modal-message" name="message" rows="4" placeholder="Message"
+            class="w-full resize-none border border-gray-300 bg-white px-4 py-3 text-sm text-ink placeholder-gray-400 outline-none transition-colors focus:border-ink"></textarea>
+        </div>
+
+        <!-- Чекбокс согласия -->
+        <div>
+          <label class="flex items-start gap-3 cursor-pointer select-none">
+            <input type="checkbox" required class="mt-1 w-4 h-4 accent-[#1C1D21] shrink-0">
+            <span class="text-sm text-neutral-400 leading-tight">
+              I agree with the 
+              <a href="privacy.html" target="_blank" rel="noopener noreferrer" class="text-ink underline hover:opacity-60 transition-opacity">
+                Privacy Policy
+              </a>
+            </span>
+          </label>
+        </div>
+
+        <button type="submit" class="group w-full flex items-center justify-center gap-2 bg-[#1C1D21] text-white px-6 py-4 text-lg font-bold hover:bg-black transition-colors">
+          send request
+          <svg class="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </button>
+        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+      </form>
+    </div>
+    <!-- КОНЕЦ БЛОКА form-section -->
+
+  </div>
+</div>

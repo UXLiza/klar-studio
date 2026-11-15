@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klar Studio — Project-2</title>
+  
+  <!-- Подключение шрифтов -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  
+  <!-- Подключение вашего вынесенного CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  
+</head>
+<body class="bg-white text-ink antialiased">
+
+  <!-- СЮДА JS ВСТАВИТ ШАПКУ -->
+  <div id="header-placeholder"></div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- ===== SCREEN 1: PROJECT HERO SECTION ===== -->
+    <section class="section-pad mx-auto max-w-[1440px] mt-10 lg:mt-16">
+      <div class="mb-10">
+        <h1 class="fade-in-up text-4xl uppercase tracking-tight font-light sm:text-5xl lg:text-[4.5rem] leading-none main-title">
+          1920’s apartment
+        </h1>
+        <p class="mt-4 text-base text-[#6b6b6f] sm:text-lg">
+          Minimalist bathroom – Enge 2023
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <!-- Left: Main Photo (Takes 7 columns) -->
+        <div class="lg:col-span-7 overflow-hidden border border-black/5">
+          <img src="img/Project-2/project-2.webp" class="w-full h-auto object-cover transition-transform duration-500 hover:scale-105" alt="Main project view">
+        </div>
+
+        <!-- Right: Info Specs Table with Arrows -->
+        <div class="lg:col-span-5 lg:col-start-8 flex flex-col pt-2 text-sm md:text-base gap-4">
+          <div class="flex items-center py-1 border-b border-black/5">
+            <span class="w-1/2 text-[#6b6b6f] uppercase text-xs tracking-wider">01 / Project</span>
+            <span class="text-black mr-4">&rarr;</span>
+            <span class="w-1/2 font-normal text-black">1920’s apartment</span>
+          </div>
+          <div class="flex items-center py-1 border-b border-black/5">
+            <span class="w-1/2 text-[#6b6b6f] uppercase text-xs tracking-wider">02 / Location</span>
+            <span class="text-black mr-4">&rarr;</span>
+            <span class="w-1/2 font-normal text-black">8010 Zürich, Switzerland</span>
+          </div>
+          <div class="flex items-center py-1 border-b border-black/5">
+            <span class="w-1/2 text-[#6b6b6f] uppercase text-xs tracking-wider">03 / Scope</span>
+            <span class="text-black mr-4">&rarr;</span>
+            <span class="w-1/2 font-normal text-black">Turn-key Renovation &amp; Space Optimization</span>
+          </div>
+          <div class="flex items-center py-1 border-b border-black/5">
+            <span class="w-1/2 text-[#6b6b6f] uppercase text-xs tracking-wider">04 / Area</span>
+            <span class="text-black mr-4">&rarr;</span>
+            <span class="w-1/2 font-normal text-black">15 m²</span>
+          </div>
+          <div class="flex items-center py-1 border-b border-black/5">
+            <span class="w-1/2 text-[#6b6b6f] uppercase text-xs tracking-wider">05 / Timeline</span>
+            <span class="text-black mr-4">&rarr;</span>
+            <span class="w-1/2 font-normal text-black">10 Weeks</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Under-photo description text -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 mt-12 sm:mt-16 lg:mt-20">
+        <div class="lg:col-span-4 lg:col-start-4 flex flex-col gap-5">
+          <p class="text-xl leading-snug text-black sm:text-2xl font-normal tracking-tight concept-title">
+            Elevating a historic layout into a seamlessly integrated, functional sanctuary
+          </p>
+          <p class="text-sm leading-relaxed text-[#6b6b6f] sm:text-base font-normal concept-desc">
+            The project involved redesigning a traditional floor plan to maximize natural light and spatial efficiency. By prioritizing clean geometric forms and premium tactile surfaces, we crafted a refined, cohesive environment that perfectly balances architectural heritage with modern comfort.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 2: BLUEPRINT & LAYOUT (FLOOR PLANS) ===== -->
+    <section class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48">
+      <div class="mb-14 lg:mb-20">
+        <h2 class="fade-in-up text-4xl uppercase tracking-tight font-light sm:text-5xl lg:text-[3.5rem] leading-none text-black">
+          Blueprint &amp; Layout (Floor plans)
+        </h2>
+      </div>
+
+      <!-- Two-Column Grid for Plans -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Left: Before Renovation Card -->
+        <div class="bg-[#EAE8E5] p-6 sm:p-10 flex flex-col justify-between border border-black/5 min-h-[400px] lg:min-h-[500px]">
+          <span class="block text-sm font-bold tracking-tight text-black mb-6 sm:mb-10">Before renovation</span>
+          <div class="flex-grow flex items-center justify-center">
+            <img src="img/Project-2/project-2-plan-old.webp" class="max-w-full max-h-[300px] lg:max-h-[380px] object-contain mix-blend-multiply" alt="Floor plan before renovation">
+          </div>
+        </div>
+
+        <!-- Right: After Renovation Card -->
+        <div class="bg-[#EAE8E5] p-6 sm:p-10 flex flex-col justify-between border border-black/5 min-h-[400px] lg:min-h-[500px]">
+          <span class="block text-sm font-bold tracking-tight text-black mb-6 sm:mb-10">After renovation</span>
+          <div class="flex-grow flex items-center justify-center">
+            <img src="img/Project-2/project-2-plan-new.webp" class="max-w-full max-h-[300px] lg:max-h-[380px] object-contain mix-blend-multiply" alt="Floor plan after renovation">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCREEN 3: ASYMMETRIC GALLERY SECTION ===== -->
+    <section class="section-pad mx-auto max-w-[1440px] mt-24 sm:mt-32 lg:mt-48 mb-24">
+      <div class="mb-14 lg:mb-20">
+        <h2 class="fade-in-up text-4xl uppercase tracking-tight font-light sm:text-5xl lg:text-[3.5rem] leading-none text-black">
+          Gallery
+        </h2>
+      </div>
+
+      <!-- Part 1: Kitchen & Shadow Gap Row -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        <!-- LEFT BLOCK: Monolithic Kitchen Concept -->
+        <div class="lg:col-span-7 flex flex-col gap-4">
+          <div class="overflow-hidden border border-black/5 aspect-[4/3]">
+            <img src="img/Project-2/project-2-gallery-2.webp" class="w-full h-full object-cover transition-transform duration-500 hover:scale-103 gallery-img-1" alt="Monolithic Kitchen Concept">
+          </div>
+          <div class="max-w-md">
+            <h4 class="text-base font-bold text-black mb-1 gallery-title-1">Monolithic Kitchen Concept</h4>
+            <p class="text-sm text-[#6b6b6f] leading-relaxed gallery-desc-1">Handleless matte white cabinets integrated seamlessly into the structural wall. Calacatta marble surfaces with a custom-engineered drop-in sink layout.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT BLOCK: Shadow Gap -->
+        <div class="lg:col-span-3 lg:col-start-10 flex flex-col gap-4 lg:mt-32">
+          <div class="max-w-xs order-2 lg:order-1">
+            <h4 class="text-base font-bold text-black mb-1 gallery-title-2">Shadow Gap &amp; Flooring Junction</h4>
+            <p class="text-sm text-[#6b6b6f] leading-relaxed gallery-desc-2">Meticulous execution of a 10mm recessed flush baseboard. Zero-tolerance alignment between Swiss oak chevron parquet and raw plaster finish.</p>
+          </div>
+          <div class="overflow-hidden border border-black/5 aspect-[3/4] order-1 lg:order-2">
+            <img src="img/Project-2/project-2-gallery-6.webp" class="w-full h-full object-cover transition-transform duration-500 hover:scale-103 gallery-img-2" alt="Shadow Gap Details">
+          </div>
+        </div>
+      </div>
+
+      <!-- ROW 2: LIVE BEFORE/AFTER SLIDER -->
+      <div class="mt-24 sm:mt-32 relative w-full h-[350px] sm:h-[480px] lg:h-[600px] overflow-hidden border border-black/10 select-none cursor-ew-resize" id="before-after-slider">
+        <!-- Background: AFTER -->
+        <img src="img/Project-2/project-2.webp" class="w-full h-full object-cover absolute top-0 left-0" alt="After">
+        <div class="absolute top-4 right-4 z-10 bg-white/95 border border-black/5 px-3 py-1 text-xs uppercase font-bold text-black">After</div>
+        
+        <!-- Overlay: BEFORE -->
+        <div class="absolute top-0 left-0 w-1/2 h-full overflow-hidden border-r-2 border-black z-20" id="after-wrap">
+          <img src="img/Project-2/project-2-gallery-3.webp" class="w-full h-full object-cover absolute top-0 left-0" id="img-after" alt="Before" style="max-width: none;">
+          <div class="absolute top-4 left-4 z-30 bg-black/80 border border-white/10 px-3 py-1 text-xs uppercase font-bold text-white">Before</div>
+        </div>
+        
+        <!-- Center Handle Button -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#1C1D21] text-white rounded-full flex items-center justify-center font-bold text-sm pointer-events-none shadow-xl z-40" id="slider-handle">&larr;&rarr;</div>
+      </div>
+
+      <!-- Part 3: Natural Light & Master Bedroom -->
+      <div class="mt-24 sm:mt-32 lg:mt-40 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        <!-- LEFT BLOCK: Natural Light Architecture -->
+        <div class="lg:col-span-3 flex flex-col gap-4 lg:mt-32">
+          <div class="max-w-xs order-2 lg:order-1">
+            <h4 class="text-base font-bold text-black mb-1">Natural Light Architecture</h4>
+            <p class="text-sm text-[#6b6b6f] leading-relaxed">Restoration of historic French windows to optimize daylight. Soft texturing achieved through pure neutral linen drapery and oiled oak floor reflections.</p>
+          </div>
+          <div class="overflow-hidden border border-black/5 aspect-[3/4] order-1 lg:order-2">
+            <img src="img/Project-2/project-2-gallery-4.webp" class="w-full h-full object-cover transition-transform duration-500 hover:scale-103" alt="Natural Light Architecture">
+          </div>
+        </div>
+
+        <!-- RIGHT BLOCK: Master Bedroom Spatial Flow -->
+        <div class="lg:col-span-7 lg:col-start-6 flex flex-col gap-4">
+          <div class="overflow-hidden border border-black/5 aspect-[4/3]">
+            <img src="img/Project-2/project-2-gallery-5.webp" class="w-full h-full object-cover transition-transform duration-500 hover:scale-103" alt="Master Bedroom Spatial Flow">
+          </div>
+          <div class="max-w-md">
+            <h4 class="text-base font-bold text-black mb-1">Master Bedroom Spatial Flow</h4>
+            <p class="text-sm text-[#6b6b6f] leading-relaxed">A secluded sleeping zone prioritizing acoustic comfort and hidden storage. Features smart climate integration concealed behind minimalist ceiling shadow lines.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM NAVIGATION -->
+      <div class="flex justify-end mt-16 mb-12 w-full">
+        <a href="index.html#calculator" class="group flex shrink-0 items-center gap-2">
+          <span class="text-lg font-bold xl:text-xl">start your project</span>
+          <svg class="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- СЮДА JS ВСТАВИТ ПОДВАЛ -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Подключение вашего вынесенного JS -->
+  <script src="script.js"></script>
+</body>
+</html>
